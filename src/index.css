@@ -1,13 +1,27 @@
+@import './reset.css';
+
+@font-face {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local('PP Neue Machina'),
+    /* Если не получилось, загрузит woff2 */ url('fonts/PPNeueMachina-PlainRegular.otf') format('otf');
+}
+
+:root {
+  --background_color: #09090b;
+  --neueMachina: 'PP Neue Machina', 'Arial', sans-serif;
+  --roboto: 'Roboto', 'Arial', sans-serif;
+  --gradient: linear-gradient(90deg, #aeff01 10%, #01d1ff 90%);
+  --gradient_hover: linear-gradient(90deg, #aeff01 0%, #fff 50%, #01d1ff 100%);
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background_color);
+  color: #fff;
+  font-size: 18px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

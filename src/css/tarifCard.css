@@ -1,0 +1,50 @@
+.tarif {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 33.3%;
+  background-color: #070709;
+  padding: 80px 60px 90px 60px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: auto;
+}
+.tarif_title {
+  color: #aeff01;
+  margin-bottom: 60px;
+}
+.tarif_advantages {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.tarif_price {
+  display: flex;
+  align-items: baseline;
+  padding: 92px 0 60px 0;
+  gap: 15px;
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 84%;
+  color: #ffffff;
+}
+.tarif_button_outline {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  bottom: 0;
+  padding: 14px 45px;
+  gap: 10px;
+  border: 1px solid #aeff01;
+  border-radius: 10px;
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #aeff01;
+}

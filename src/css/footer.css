@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 86px 0;
+}
+.footer_line {
+  width: 100%;
+  opacity: 0.12;
+  height: 1px;
+  border: 1px solid #ffffff;
+}
+.footer_menu {
+  display: flex;
+  gap: 120px;
+}
+.footer_menu_column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_menu_link {
+}

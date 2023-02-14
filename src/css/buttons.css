@@ -1,0 +1,107 @@
+.button_outline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+
+  border: 1px solid #aeff01;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  font-family: var(--neueMachina);
+  font-size: 16px;
+  line-height: 140%;
+  color: #aeff01;
+}
+.button_fill {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 666px;
+  padding: 20px 45px;
+  gap: 10px;
+  background: #aeff01;
+  border: 1px solid #aeff01;
+  border-radius: 10px;
+
+  font-family: var(--neueMachina);
+  font-size: 24px;
+  line-height: 140%;
+  color: #101a3a;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button_fill:hover,
+.button_fill:active {
+  background: none;
+  color: #aeff01;
+}
+.button_card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #aeff01;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 60px 40px;
+  text-align: start;
+  align-items: baseline;
+
+  font-family: var(--neueMachina);
+  font-size: 32px;
+  line-height: 120%;
+  color: #aeff01;
+}
+.button_switch {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  border: 1px solid #01d1ff;
+  border-radius: 5px;
+
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #01d1ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button_switch:hover,
+.button_switch:active {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  background: #01d1ff;
+  border: 1px solid #01d1ff;
+  border-radius: 5px;
+
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #101a3a;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
