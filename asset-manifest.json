@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06bf4080.css",
+    "main.js": "/static/js/main.c87e67a5.js",
+    "static/js/787.dd349d84.chunk.js": "/static/js/787.dd349d84.chunk.js",
+    "static/media/Photo_slider.png": "/static/media/Photo_slider.0299423eb6719c4463a0.png",
+    "static/media/news_3.png": "/static/media/news_3.b242ad571dd630de0767.png",
+    "static/media/lines_1.png": "/static/media/lines_1.955200fe63e2ddfef187.png",
+    "static/media/news_1.png": "/static/media/news_1.31da2d5dbd01e4155ce0.png",
+    "static/media/planet.png": "/static/media/planet.d9487bf052b05f95e1b6.png",
+    "static/media/news_4.png": "/static/media/news_4.999be71627d9ce1bcb8c.png",
+    "static/media/PPNeueMachina-PlainRegular.otf": "/static/media/PPNeueMachina-PlainRegular.c1fe9e8fedaaf2eed971.otf",
+    "static/media/planet_mini.png": "/static/media/planet_mini.7384e9ca3524fa711ae8.png",
+    "static/media/lines_2.svg": "/static/media/lines_2.ca320db19ae7d5066d9ac1d4f79c09ed.svg",
+    "static/media/target.svg": "/static/media/target.1e4538a9b09bd2d82d57042f94246c21.svg",
+    "static/media/phone.svg": "/static/media/phone.091c5305930c93062c3e489ebe9e9536.svg",
+    "static/media/social_VK.svg": "/static/media/social_VK.f8bb307e6feee4d7b5d4d6b3bb91a332.svg",
+    "static/media/advantage.svg": "/static/media/advantage.3e85e660925f3ecc26cef83ed616b7a7.svg",
+    "static/media/social_IG.svg": "/static/media/social_IG.0da8678b49305bf8cd821b3d6189ae89.svg",
+    "static/media/social_FB.svg": "/static/media/social_FB.86e5b20acf170f2b26ec54edd925c61f.svg",
+    "static/media/user.svg": "/static/media/user.7718a639ed89ef85851d54177b2b18a1.svg",
+    "index.html": "/index.html",
+    "static/media/mask_for_lines_in_center.svg": "/static/media/mask_for_lines_in_center.81b58f8c2c8976dd630b.svg",
+    "static/media/slider_arrow_right.svg": "/static/media/slider_arrow_right.eebb263b2838c5c2897b57ff3037835a.svg",
+    "static/media/slider_arrow_left.svg": "/static/media/slider_arrow_left.f79e8714f99ba38750660c9a2b453e55.svg",
+    "static/media/arrow_button_cards.svg": "/static/media/arrow_button_cards.8529304d1601ab543cd19be729735820.svg",
+    "main.06bf4080.css.map": "/static/css/main.06bf4080.css.map",
+    "main.c87e67a5.js.map": "/static/js/main.c87e67a5.js.map",
+    "787.dd349d84.chunk.js.map": "/static/js/787.dd349d84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06bf4080.css",
+    "static/js/main.c87e67a5.js"
+  ]
+}
