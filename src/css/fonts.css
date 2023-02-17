@@ -20,6 +20,15 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+.h1_inner {
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .text_gradient {
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -74,10 +83,21 @@
   font-size: 16px;
   font-family: var(--neueMachina);
 }
+.header_h6:hover {
+  color: #01d1ff;
+}
 .h5 {
   font-family: var(--roboto);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+}
+.h5_mark {
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  opacity: 0.6;
 }

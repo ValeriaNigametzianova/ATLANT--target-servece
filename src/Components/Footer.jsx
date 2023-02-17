@@ -2,6 +2,10 @@ import React from 'react'
 import '../css/main.css'
 import '../css/header.css'
 import '../css/footer.css'
+import { NavLink } from 'react-router-dom'
+import FB from '../icons/social_FB.svg'
+import IG from '../icons/social_IG.svg'
+import VK from '../icons/social_VK.svg'
 
 const Footer = () => {
   return (
@@ -15,22 +19,41 @@ const Footer = () => {
                 <div className="logo">ATLANT</div>
               </a>
               <div style={{ display: 'flex', gap: '40px' }}>
-                <div className="h5">© 2022 ATLANT</div>
-                <div className="h5">Политика конфиденциальности</div>
+                <div className="h5_mark">© 2022 ATLANT</div>
+                <div className="h5_mark footer_menu_link">
+                  <NavLink to="/policy">Политика конфиденциальности</NavLink>
+                </div>
               </div>
             </div>
-            <div className="second_column">
+            <div className="second_column" style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div className="footer_menu">
                 <div className="footer_menu_column">
-                  <div className="h5">О нас</div>
-                  <div className="h5">Возможности</div>
-                  <div className="h5">Тарифы</div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#About us">О нас</a>
+                  </div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#Opportunities">Возможности</a>
+                  </div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#Tarifs">Тарифы</a>
+                  </div>
                 </div>
                 <div className="footer_menu_column">
-                  <div className="h5">Партнерство</div>
-                  <div className="h5">Блог</div>
-                  <div className="h5">Контакты</div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#Partnership">Партнерство</a>
+                  </div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#Blog">Блог</a>
+                  </div>
+                  <div className="h5 footer_menu_link">
+                    <a href="#Contacts">Контакты</a>
+                  </div>
                 </div>
+              </div>
+              <div className="footer_social_media">
+                <img src={FB} alt="Facebook" style={{ width: '25px', height: '25px' }} />
+                <img src={VK} alt="ВКонтакте" style={{ width: '25px', height: '25px' }} />
+                <img src={IG} alt="Instagram" style={{ width: '25px', height: '25px' }} />
               </div>
             </div>
           </div>

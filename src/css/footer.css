@@ -19,5 +19,11 @@
   flex-direction: column;
   gap: 20px;
 }
-.footer_menu_link {
+.footer_menu_link:hover {
+  color: #01d1ff;
+}
+.footer_social_media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

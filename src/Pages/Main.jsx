@@ -20,6 +20,7 @@ import News3 from '../image/news_3.png'
 import News4 from '../image/news_4.png'
 import PlanetMini from '../image/planet_mini.png'
 import NewsCard from '../Components/NewsCard'
+import { NavLink } from 'react-router-dom'
 
 const Main = () => {
   const advantagesStandart = [
@@ -81,6 +82,11 @@ const Main = () => {
     <div>
       <img src={planet_img} alt="shape_planet" style={{ position: 'absolute', left: 0 }} />
       <Header></Header>
+      <a href="#top">
+        <div className="button_to_top">
+          <img src={ArrowLink} alt="to_top" style={{ rotate: '-45deg' }} />
+        </div>
+      </a>
       <div className="container">
         <div className="content">
           <div className="first_screen">
@@ -102,9 +108,8 @@ const Main = () => {
         </div>
       </div>
       <div className="container">
-        <div className="lines_first"></div>
         <div className="content">
-          <div className="second_screen">
+          <div className="second_screen" id="About us">
             <div className="h1">
               превращаем
               <br />
@@ -145,7 +150,7 @@ const Main = () => {
 
       <div className="container">
         <div className="content">
-          <div className="screen">
+          <div className="screen" id="Opportunities">
             <div className="h1">
               широкий спектр
               <br />
@@ -235,10 +240,12 @@ const Main = () => {
                   </div>
                 </div>
 
-                <div className="button_card">
-                  <div>Ко всем</div>
-                  <img src={ArrowLink} alt="arrow" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
-                </div>
+                <NavLink to="/tools" style={{ display: 'flex' }}>
+                  <div className="button_card">
+                    <div>Ко всем</div>
+                    <img src={ArrowLink} alt="arrow" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
+                  </div>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -247,7 +254,7 @@ const Main = () => {
 
       <div className="container">
         <div className="content">
-          <div className="second_screen">
+          <div className="second_screen" id="Partnership">
             <div className="h1">
               предлагаем стать
               <br />
@@ -293,7 +300,7 @@ const Main = () => {
       <div className="container">
         <img src={Lines2} alt="lines_img" className="lines_second" />
         <div className="content">
-          <div className="screen">
+          <div className="screen" id="Tarifs">
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
               <div className="h1">Простые тарифы</div>
               <div style={{ display: 'flex', gap: '10px' }}>
@@ -312,7 +319,7 @@ const Main = () => {
 
       <div className="container">
         <div className="content">
-          <div className="screen">
+          <div className="screen" id="Blog">
             <div className="h1">
               интересные <span className="text_gradient">новости</span>
               <br />
@@ -340,7 +347,7 @@ const Main = () => {
 
       <div className="container">
         <div className="content">
-          <div className="second_screen">
+          <div className="second_screen" id="Contacts">
             <div>
               <div className="h2" style={{ color: '#ffffff', marginBottom: '80px' }}>
                 Свяжитесь с нами:

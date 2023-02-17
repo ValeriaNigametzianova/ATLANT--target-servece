@@ -13,12 +13,24 @@ const Header = () => {
             <div className="logo">ATLANT</div>
           </a>
           <ul className="menu">
-            <li className="header_h6">О нас</li>
-            <li className="header_h6">Возможности</li>
-            <li className="header_h6">Партнерство</li>
-            <li className="header_h6">Тарифы</li>
-            <li className="header_h6">Блог</li>
-            <li className="header_h6">Контакты</li>
+            <li className="header_h6">
+              <a href="#About us">О нас</a>
+            </li>
+            <li className="header_h6">
+              <a href="#Opportunities">Возможности</a>
+            </li>
+            <li className="header_h6">
+              <a href="#Partnership">Партнерство</a>
+            </li>
+            <li className="header_h6">
+              <a href="#Tarifs">Тарифы</a>
+            </li>
+            <li className="header_h6">
+              <a href="#Blog">Блог</a>
+            </li>
+            <li className="header_h6">
+              <a href="#Contacts">Контакты</a>
+            </li>
           </ul>
           <div className="actions">
             <img src={UserIcon} alt="lk" />
