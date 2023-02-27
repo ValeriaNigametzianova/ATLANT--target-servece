@@ -1,0 +1,59 @@
+.bunner {
+  display: flex;
+  flex-direction: column;
+  padding: 87px 8.476%;
+  background-color: #070709;
+  border: 1px solid rgba(1, 209, 255, 0.3);
+  border-radius: 15px;
+}
+
+.bunner_big_title {
+  justify-content: space-around;
+  margin-bottom: 60px;
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.bunner_first_line {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.bunner_second_line {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.companies_wrapper {
+  display: grid;
+  grid-template-columns: 15.122% 15.122% 15.122% 15.122% 15.122% 15.122%;
+  grid-template-rows: auto auto;
+  column-gap: 1.83%;
+  grid-template-areas: 'a b c d e f';
+  justify-items: center;
+  align-items: center;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
