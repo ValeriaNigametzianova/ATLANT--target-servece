@@ -1,25 +1,29 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Logo_Polytech from '../image/mospolytech-logo-white.png'
+import '../css/title.css'
 
 const Titul = () => {
   return (
     <div>
       <div class="container_title">
-        <div class="content">
-          <img class="h1" src="./mospolytech-logo-white.png" alt="LogoPolytech" height="100px" width="100px" />
-          <div class="h1">ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</div>
-          <div class="h1">МОСКОВСКИЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</div>
+        <div class="content_title">
+          <img src={Logo_Polytech} alt="LogoPolytech" height="100px" width="100px" />
+          <div class="h2_title">
+            ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ
+          </div>
+          <div class="h2_title">МОСКОВСКИЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</div>
         </div>
 
         <div class="content">
-          <div class="h2">Факультет информационных технологий</div>
-          <div class="h2">Кафедра Информатики и информационных технологий</div>
-          <div class="h2">Направление подготовки 09.03.02 «Информационные системы и технологии»</div>
+          <div class="h2_title">Факультет информационных технологий</div>
+          <div class="h2_title">Кафедра Информатики и информационных технологий</div>
+          <div class="h2_title">Направление подготовки 09.03.02 «Информационные системы и технологии»</div>
         </div>
         <div class="content">
-          <div class="h3">Нигаметзянова Валерия Рустамовна 201-722</div>
+          <div class="h3_title">Нигаметзянова Валерия Рустамовна 201-722</div>
           <NavLink to="/main">
-            <div class="h4">Сайт ATLANT – сервис по автоматизации контекстной рекламы</div>
+            <div class="h4_title">Сайт ATLANT – сервис по автоматизации контекстной рекламы</div>
           </NavLink>
         </div>
       </div>
