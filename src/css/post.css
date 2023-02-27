@@ -1,0 +1,158 @@
+.cover {
+  width: 100%;
+  height: 510px;
+  position: relative;
+  background-image: url(../image/post_cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+}
+.cover_place {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 258px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
+}
+.cover_content {
+  display: flex;
+  max-width: 1640px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: end;
+}
+.article_screen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+.cover_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover_title_info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.teg {
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  background: #01d1ff;
+  border: 1px solid #01d1ff;
+  border-radius: 21px;
+
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 57.56%;
+}
+
+.table_of_contents {
+  display: flex;
+  flex-direction: column;
+  width: 26.66%;
+  height: fit-content;
+  padding: 60px 60px 40px;
+  align-items: left;
+  background: #070709;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+}
+
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu {
+  position: relative;
+  margin-top: 10px;
+  color: #01d1ff;
+  /* width: 10em; */
+}
+
+#menu dt {
+  cursor: pointer;
+  margin: 20px 0;
+  text-align: left;
+}
+
+#menu dd {
+  position: relative;
+  z-index: 100;
+  left: 2em;
+  /* margin-top: -1.4em; */
+}
+
+#menu li {
+  text-align: left;
+  font-size: 85%;
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+#menu li a,
+#menu dt a {
+  color: #01d1ff;
+  text-decoration: none;
+}
+
+#menu li a:hover,
+#menu dt a:hover {
+  color: #07aed3;
+  text-decoration: none;
+}
+
+#menu li azhover {
+  text-decoration: underline;
+}
+
+#mentions {
+  font-family: verdana, arial, sans-serif;
+  position: absolute;
+
+  bottom: 200px;
+  left: 10px;
+  color: #000;
+
+  background-color: #ddd;
+}
+
+#fmentions a {
+  text-decoration: none;
+
+  color: #222;
+}
+
+#mentions a:hover {
+  text-decoration: underline;
+}
