@@ -3,10 +3,16 @@ import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import '../css/policy.css'
 import Dot from '../icons/dot_mark.svg'
+import ArrowLink from '../icons/arrow_button_cards.svg'
 
 const Policy = () => {
   return (
     <div>
+      <a href="#top">
+        <div className="button_to_top">
+          <img src={ArrowLink} alt="to_top" style={{ rotate: '-45deg' }} />
+        </div>
+      </a>
       <Header></Header>
       <div className="container">
         <div className="policy_content">
