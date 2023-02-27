@@ -29,24 +29,24 @@ const Footer = () => {
               <div className="footer_menu">
                 <div className="footer_menu_column">
                   <div className="h5 footer_menu_link">
-                    <a href="#About us">О нас</a>
+                    <a href="Main.jsx#About us">О нас</a>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="#Opportunities">Возможности</a>
+                    <a href="Main.jsx#Opportunities">Возможности</a>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="#Tarifs">Тарифы</a>
+                    <a href="Main.jsx#Tarifs">Тарифы</a>
                   </div>
                 </div>
                 <div className="footer_menu_column">
                   <div className="h5 footer_menu_link">
-                    <a href="#Partnership">Партнерство</a>
+                    <a href="Main.jsx#Partnership">Партнерство</a>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="#Blog">Блог</a>
+                    <a href="Main.jsx#Blog">Блог</a>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="#Contacts">Контакты</a>
+                    <a href="Main.jsx#Contacts">Контакты</a>
                   </div>
                 </div>
               </div>

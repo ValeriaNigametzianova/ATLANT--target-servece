@@ -1,37 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/header.css'
 import UserIcon from '../icons/user.svg'
 import PhoneIcon from '../icons/phone.svg'
+import { HashLink } from 'react-router-hash-link'
 
 const Header = () => {
+  useEffect(() => {
+    console.log(window.location.pathname)
+  }, [])
   return (
     <div className="container">
       <div className="content">
         <div className="header">
-          <a href="./index.html">
+          {/* {if (window.location.href === "")} */}
+          <a href="./index">
             <div className="logo">ATLANT</div>
           </a>
-          <ul className="menu">
-            <li className="header_h6">
-              <a href="#About us">О нас</a>
-            </li>
-            <li className="header_h6">
-              <a href="#Opportunities">Возможности</a>
-            </li>
-            <li className="header_h6">
-              <a href="#Partnership">Партнерство</a>
-            </li>
-            <li className="header_h6">
-              <a href="#Tarifs">Тарифы</a>
-            </li>
-            <li className="header_h6">
-              <a href="#Blog">Блог</a>
-            </li>
-            <li className="header_h6">
-              <a href="#Contacts">Контакты</a>
-            </li>
-          </ul>
+          <div className="menu">
+            <div className="header_h6">
+              <HashLink smooth to='/main#About us' >О нас</HashLink>
+            </div>
+            <div className="header_h6">
+              <HashLink smooth to='/main#Opportunities'>Возможности</HashLink>
+            </div>
+            <div className="header_h6">
+              <HashLink smooth to='/main#Partnership' >Партнерство</HashLink>
+            </div>
+            <div className="header_h6">
+              <HashLink smooth to='/main#Tarifs' >Тарифы</HashLink>
+            </div>
+            <div className="header_h6">
+              <HashLink smooth to='/main#Blog' >Блог</HashLink>
+            </div>
+            <div className="header_h6">
+              <HashLink smooth to='/main#Contacts' >Контакты</HashLink>
+            </div>
+          </div>
           <div className="actions">
             <img src={UserIcon} alt="lk" />
             <img src={PhoneIcon} alt="phone" />
