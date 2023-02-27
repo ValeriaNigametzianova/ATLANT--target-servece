@@ -8,8 +8,8 @@ const Form = () => {
   const Label = styled.label`
     opacity: 0.8;
     width: fit-content;
-    &::after {
-      content: ${(props) => (props.required ? '*' : '')};
+    &:after {
+      content: '${(props) => (props.required ? "*" : "")}';
       padding-left: 2px;
       color: #01d1ff;
     }
@@ -31,7 +31,7 @@ const Form = () => {
           />
         </p>
         <p className="form_field">
-          <Label htmlFor="password" className="h5">
+          <Label htmlFor="password" className="h5" required>
             Почта
           </Label>
           <input id="password" name="password" required="required" type="text" />
