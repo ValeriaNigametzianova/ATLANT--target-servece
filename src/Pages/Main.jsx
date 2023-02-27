@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/buttons.css'
 import '../css/fonts.css'
@@ -21,6 +21,7 @@ import News4 from '../image/news_4.png'
 import PlanetMini from '../image/planet_mini.png'
 import NewsCard from '../Components/NewsCard'
 import { NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 const Main = () => {
   const advantagesStandart = [
@@ -109,7 +110,7 @@ const Main = () => {
       </div>
       <div className="container">
         <div className="content">
-          <div className="second_screen" id="About us">
+          <div className="second_screen" id={'About us'}>
             <div className="h1">
               превращаем
               <br />
@@ -150,7 +151,7 @@ const Main = () => {
 
       <div className="container">
         <div className="content">
-          <div className="screen" id="Opportunities">
+          <div className="screen" id={'Opportunities'}>
             <div className="h1">
               широкий спектр
               <br />
@@ -240,12 +241,12 @@ const Main = () => {
                   </div>
                 </div>
 
-                <NavLink to="/tools" style={{ display: 'flex' }}>
+                <HashLink to="/tools" style={{ display: 'flex' }}>
                   <div className="button_card">
                     <div>Ко всем</div>
                     <img src={ArrowLink} alt="arrow" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
                   </div>
-                </NavLink>
+                </HashLink>
               </div>
             </div>
           </div>
