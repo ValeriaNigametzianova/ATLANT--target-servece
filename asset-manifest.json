@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/ATLANT-target-service/static/css/main.d555f6dc.css",
-    "main.js": "/ATLANT-target-service/static/js/main.797a1000.js",
+    "main.css": "/ATLANT-target-service/static/css/main.3a63859e.css",
+    "main.js": "/ATLANT-target-service/static/js/main.26ffa308.js",
     "static/js/787.dd349d84.chunk.js": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js",
     "static/media/Photo_slider.png": "/ATLANT-target-service/static/media/Photo_slider.0299423eb6719c4463a0.png",
+    "static/media/post_cover.png": "/ATLANT-target-service/static/media/post_cover.ab4b29c2f697c34f13dd.png",
     "static/media/news_3.png": "/ATLANT-target-service/static/media/news_3.b242ad571dd630de0767.png",
     "static/media/lines_1.png": "/ATLANT-target-service/static/media/lines_1.955200fe63e2ddfef187.png",
     "static/media/news_1.png": "/ATLANT-target-service/static/media/news_1.31da2d5dbd01e4155ce0.png",
@@ -12,24 +13,30 @@
     "static/media/PPNeueMachina-PlainRegular.otf": "/ATLANT-target-service/static/media/PPNeueMachina-PlainRegular.c1fe9e8fedaaf2eed971.otf",
     "static/media/planet_mini.png": "/ATLANT-target-service/static/media/planet_mini.7384e9ca3524fa711ae8.png",
     "static/media/lines_2.svg": "/ATLANT-target-service/static/media/lines_2.ca320db19ae7d5066d9ac1d4f79c09ed.svg",
+    "static/media/sphere.svg": "/ATLANT-target-service/static/media/sphere.15b4d1a996b6d058177d90db00b07cc2.svg",
     "static/media/target.svg": "/ATLANT-target-service/static/media/target.1e4538a9b09bd2d82d57042f94246c21.svg",
+    "static/media/logo_nikon.png": "/ATLANT-target-service/static/media/logo_nikon.23ffff7e1eeae6d249e8.png",
     "static/media/phone.svg": "/ATLANT-target-service/static/media/phone.091c5305930c93062c3e489ebe9e9536.svg",
     "static/media/social_VK.svg": "/ATLANT-target-service/static/media/social_VK.f8bb307e6feee4d7b5d4d6b3bb91a332.svg",
     "static/media/advantage.svg": "/ATLANT-target-service/static/media/advantage.3e85e660925f3ecc26cef83ed616b7a7.svg",
+    "static/media/eye.svg": "/ATLANT-target-service/static/media/eye.11e6c461f78688de3faa4566c726fe0b.svg",
     "static/media/social_IG.svg": "/ATLANT-target-service/static/media/social_IG.0da8678b49305bf8cd821b3d6189ae89.svg",
     "static/media/social_FB.svg": "/ATLANT-target-service/static/media/social_FB.86e5b20acf170f2b26ec54edd925c61f.svg",
     "index.html": "/ATLANT-target-service/index.html",
     "static/media/user.svg": "/ATLANT-target-service/static/media/user.7718a639ed89ef85851d54177b2b18a1.svg",
+    "static/media/calendar.svg": "/ATLANT-target-service/static/media/calendar.e34f7357b97ef0e3733a7939b54e429b.svg",
+    "static/media/timer.svg": "/ATLANT-target-service/static/media/timer.3f37097c42f229db9794bf8730910509.svg",
     "static/media/mask_for_lines_in_center.svg": "/ATLANT-target-service/static/media/mask_for_lines_in_center.81b58f8c2c8976dd630b.svg",
     "static/media/slider_arrow_right.svg": "/ATLANT-target-service/static/media/slider_arrow_right.eebb263b2838c5c2897b57ff3037835a.svg",
     "static/media/slider_arrow_left.svg": "/ATLANT-target-service/static/media/slider_arrow_left.f79e8714f99ba38750660c9a2b453e55.svg",
     "static/media/arrow_button_cards.svg": "/ATLANT-target-service/static/media/arrow_button_cards.8529304d1601ab543cd19be729735820.svg",
-    "main.d555f6dc.css.map": "/ATLANT-target-service/static/css/main.d555f6dc.css.map",
-    "main.797a1000.js.map": "/ATLANT-target-service/static/js/main.797a1000.js.map",
+    "static/media/dot_mark.svg": "/ATLANT-target-service/static/media/dot_mark.dc42f58fec546eae39f06e275acb4a56.svg",
+    "main.3a63859e.css.map": "/ATLANT-target-service/static/css/main.3a63859e.css.map",
+    "main.26ffa308.js.map": "/ATLANT-target-service/static/js/main.26ffa308.js.map",
     "787.dd349d84.chunk.js.map": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d555f6dc.css",
-    "static/js/main.797a1000.js"
+    "static/css/main.3a63859e.css",
+    "static/js/main.26ffa308.js"
   ]
 }
