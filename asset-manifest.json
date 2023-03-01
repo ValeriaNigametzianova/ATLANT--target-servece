@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ATLANT-target-service/static/css/main.3a63859e.css",
-    "main.js": "/ATLANT-target-service/static/js/main.26ffa308.js",
+    "main.js": "/ATLANT-target-service/static/js/main.5e854467.js",
     "static/js/787.dd349d84.chunk.js": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js",
     "static/media/Photo_slider.png": "/ATLANT-target-service/static/media/Photo_slider.0299423eb6719c4463a0.png",
     "static/media/post_cover.png": "/ATLANT-target-service/static/media/post_cover.ab4b29c2f697c34f13dd.png",
@@ -32,11 +32,11 @@
     "static/media/arrow_button_cards.svg": "/ATLANT-target-service/static/media/arrow_button_cards.8529304d1601ab543cd19be729735820.svg",
     "static/media/dot_mark.svg": "/ATLANT-target-service/static/media/dot_mark.dc42f58fec546eae39f06e275acb4a56.svg",
     "main.3a63859e.css.map": "/ATLANT-target-service/static/css/main.3a63859e.css.map",
-    "main.26ffa308.js.map": "/ATLANT-target-service/static/js/main.26ffa308.js.map",
+    "main.5e854467.js.map": "/ATLANT-target-service/static/js/main.5e854467.js.map",
     "787.dd349d84.chunk.js.map": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a63859e.css",
-    "static/js/main.26ffa308.js"
+    "static/js/main.5e854467.js"
   ]
 }
