@@ -1,4 +1,4 @@
-.cover {
+/* .cover {
   width: 100%;
   height: 510px;
   position: relative;
@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 60px;
-}
+} */
 .cover_place {
   position: absolute;
   bottom: 0;
@@ -39,6 +39,12 @@
   margin-bottom: 40px;
 }
 
+.post_paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .teg {
   width: fit-content;
   box-sizing: border-box;
@@ -68,7 +74,10 @@
   flex-direction: column;
   width: 57.56%;
 }
-
+.article_links {
+  display: flex;
+  justify-content: 'space-between';
+}
 .table_of_contents {
   display: flex;
   flex-direction: column;
