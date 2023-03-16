@@ -19,22 +19,34 @@ const Header = () => {
           </a>
           <div className="menu">
             <div className="header_h6">
-              <HashLink smooth to='/main#About us' >О нас</HashLink>
+              <HashLink smooth to="/main#About us">
+                О нас
+              </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to='/main#Opportunities'>Возможности</HashLink>
+              <HashLink smooth to="/main#Opportunities">
+                Возможности
+              </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to='/main#Partnership' >Партнерство</HashLink>
+              <HashLink smooth to="/main#Partnership">
+                Партнерство
+              </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to='/main#Tarifs' >Тарифы</HashLink>
+              <HashLink smooth to="/main#Tarifs">
+                Тарифы
+              </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to='/main#Blog' >Блог</HashLink>
+              <HashLink smooth to="/blog">
+                Блог
+              </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to='/main#Contacts' >Контакты</HashLink>
+              <HashLink smooth to="/main#Contacts">
+                Контакты
+              </HashLink>
             </div>
           </div>
           <div className="actions">

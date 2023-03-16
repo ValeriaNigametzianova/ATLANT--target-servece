@@ -7,6 +7,8 @@ import Main from './Pages/Main'
 import Policy from './Pages/Policy'
 import Titul from './Pages/Titul'
 import Tools from './Pages/Tools'
+import UTM from './Pages/UTM'
+import Blog from './Pages/Blog'
 
 function App() {
   useEffect(() => {
@@ -22,8 +24,10 @@ function App() {
           <Route path="/main" element={<Main />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/tools" element={<Tools />} />
-          <Route path="/post" element={<Post />} />
+          <Route path="/blog/post" element={<Post />} />
           <Route path="/*" element={<Main />} />
+          <Route path="/tools/UTMMarkup" element={<UTM />} />
+          <Route path="/Blog" element={<Blog />} />
         </Routes>
       </div>
     </BrowserRouter>
