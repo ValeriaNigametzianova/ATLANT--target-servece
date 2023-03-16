@@ -1,6 +1,7 @@
 import React from 'react'
-import '../css/main.css'
 import styled, { css } from 'styled-components'
+import '../css/main.css'
+import '../reset.css'
 
 const NewsCard = ({ className, image, position, title, time, date }) => {
   const News = styled.div`
@@ -47,7 +48,6 @@ const NewsCard = ({ className, image, position, title, time, date }) => {
   `
   return (
     <News image={image} className={className}>
-      {/* <img src={News1} alt="photo_keys_Ozon" style={{ zIndex: '-1' }} /> */}
       <NewsCardContent position={position}>
         <div className="h3_roboto display-linebreak"> {title}</div>
         <div className="news_card_info ">

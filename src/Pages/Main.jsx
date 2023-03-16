@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../css/main.css'
 import '../css/buttons.css'
 import '../css/fonts.css'
@@ -8,6 +8,8 @@ import ArrowLink from '../icons/arrow_button_cards.svg'
 import ArrowPrewSlider from '../icons/slider_arrow_left.svg'
 import ArrowNextSlider from '../icons/slider_arrow_right.svg'
 import TarifCard from '../Components/TarifCard'
+import Lines1 from '../image/lines_1.svg'
+import MaskLines1 from '../image/mask_for_lines_in_center.svg'
 import Lines2 from '../image/lines_2.svg'
 import Target from '../image/target.svg'
 import IconVK from '../icons/social_VK.svg'
@@ -20,7 +22,6 @@ import News3 from '../image/news_3.png'
 import News4 from '../image/news_4.png'
 import PlanetMini from '../image/planet_mini.png'
 import NewsCard from '../Components/NewsCard'
-import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 const Main = () => {
@@ -84,8 +85,10 @@ const Main = () => {
       <img src={planet_img} alt="shape_planet" style={{ position: 'absolute', left: 0 }} />
       <Header></Header>
       <a href="#top">
-        <div className="button_to_top">
-          <img src={ArrowLink} alt="to_top" style={{ rotate: '-45deg' }} />
+        <div className="button_to_top" style={{ rotate: '-45deg' }}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
+          </svg>
         </div>
       </a>
       <div className="container">
@@ -109,6 +112,8 @@ const Main = () => {
         </div>
       </div>
       <div className="container">
+        <img src={Lines1} alt="shape_planet" style={{ position: 'absolute', left: 0, top: '50px' }} />
+        <img src={MaskLines1} alt="shape_planet" style={{ position: 'absolute', left: 0, top: '900px' }} />
         <div className="content">
           <div className="second_screen" id={'About us'}>
             <div className="h1">
@@ -121,7 +126,7 @@ const Main = () => {
                 Сэкономим время специалиста и&nbsp;дадим возможность перераспределить задачи максимально результативно.
                 <br />
                 Наш сервис поддерживает Яндекс.Директ, Google Рекламу и&nbsp;рекламные кампании в&nbsp;социальных сетях
-                <span style={{ fontWeight: 600, color: '#ffffff' }}>Facebook</span>,<br />
+                <span style={{ fontWeight: 600, color: '#ffffff' }}> Facebook</span>,<br />
                 <span style={{ fontWeight: 600, color: '#ffffff' }}>
                   Instagram (Meta Platforms Inc. запрещено на&nbsp;территории России)
                 </span>
@@ -160,19 +165,21 @@ const Main = () => {
 
             <div className="cards" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <div className="card_top">
-                  <div style={{ display: 'flex', alignItems: 'baseline' }}>
-                    <div className="card_title_top">UTM-разметчик</div>
-                    <div className="card_number" style={{ padding: '0 74px 0 52px' }}>
-                      01
+                <HashLink to="/tools/UTMMarkup" style={{ display: 'flex' }}>
+                  <div className="card_top">
+                    <div style={{ display: 'flex', alignItems: 'baseline' }}>
+                      <div className="card_title_top">UTM-разметчик</div>
+                      <div className="card_number" style={{ padding: '0 74px 0 52px' }}>
+                        01
+                      </div>
+                    </div>
+                    <div className="card_description_top">
+                      Добавление UTM-меток
+                      <br />
+                      в&nbsp;объявления и&nbsp;их обновление
                     </div>
                   </div>
-                  <div className="card_description_top">
-                    Добавление UTM-меток
-                    <br />
-                    в&nbsp;объявления и&nbsp;их обновление
-                  </div>
-                </div>
+                </HashLink>
                 <div className="card_top">
                   <div style={{ display: 'flex', alignItems: 'baseline' }}>
                     <div className="card_title_top">ключи</div>
@@ -244,7 +251,16 @@ const Main = () => {
                 <HashLink to="/tools" style={{ display: 'flex' }}>
                   <div className="button_card">
                     <div>Ко всем</div>
-                    <img src={ArrowLink} alt="arrow" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{ width: '16px', height: '16px', marginLeft: '20px' }}
+                    >
+                      <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
+                    </svg>
                   </div>
                 </HashLink>
               </div>
@@ -337,10 +353,21 @@ const Main = () => {
                   date={el?.date}
                 ></NewsCard>
               ))}
-              <div className="button_card f" style={{ paddingTop: '43px' }}>
-                <div>В блог</div>
-                <img src={ArrowLink} alt="arrow" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
-              </div>
+              <HashLink to="/blog" style={{ display: 'flex' }}>
+                <div className="button_card f" style={{ paddingTop: '43px' }}>
+                  <div>В блог</div>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ width: '16px', height: '16px', marginLeft: '20px' }}
+                  >
+                    <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
+                  </svg>
+                </div>
+              </HashLink>
             </div>
           </div>
         </div>

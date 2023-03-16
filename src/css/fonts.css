@@ -90,7 +90,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #cecece;
+  /* color: #cecece; */
+  color: #ffffff;
 }
 .link {
   font-family: var(--neueMachina);
@@ -102,6 +103,7 @@
 }
 .header_h6 {
   font-size: 16px;
+  line-height: 140%;
   font-family: var(--neueMachina);
 }
 .header_h6:hover {

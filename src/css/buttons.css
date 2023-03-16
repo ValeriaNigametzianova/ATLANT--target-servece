@@ -15,6 +15,16 @@
   line-height: 140%;
   color: #aeff01;
 }
+.button_outline:hover,
+.button_outline:active {
+  background: #aeff01;
+  border: 1px solid #aeff01;
+  color: #101a3a;
+}
+.button_outline:hover path,
+.button_outline:active path {
+  stroke: #101a3a;
+}
 .button_fill {
   position: relative;
   box-sizing: border-box;
@@ -29,6 +39,7 @@
   background: #aeff01;
   border: 1px solid #aeff01;
   border-radius: 10px;
+  cursor: pointer;
 
   font-family: var(--neueMachina);
   font-size: 24px;
@@ -44,6 +55,11 @@
 .button_fill:active {
   background: none;
   color: #aeff01;
+  cursor: pointer;
+}
+.button_fill:hover path,
+.button_fill:active path {
+  stroke: #101a3a;
 }
 .button_card {
   display: flex;
@@ -54,12 +70,37 @@
   padding: 60px 40px;
   text-align: start;
   align-items: baseline;
+  cursor: pointer;
 
   font-family: var(--neueMachina);
   font-size: 32px;
   line-height: 120%;
   color: #aeff01;
 }
+.button_card:hover,
+.button_card:active {
+  display: flex;
+  flex-direction: row;
+  background: #aeff01;
+  border: 1px solid #aeff01;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 60px 40px;
+  text-align: start;
+  align-items: baseline;
+  cursor: pointer;
+
+  font-family: var(--neueMachina);
+  font-size: 32px;
+  line-height: 120%;
+  color: #101a3a;
+}
+
+.button_card:hover path,
+.button_card:active path {
+  stroke: #101a3a;
+}
+
 .button_switch {
   display: flex;
   flex-direction: row;
@@ -104,4 +145,26 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.button_to_top {
+  display: flex;
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 1px solid #aeff01;
+  background-color: #070709;
+}
+.button_to_top:hover {
+  border: 1px solid #aeff01;
+  background-color: #aeff01;
+}
+.button_to_top:hover path {
+  stroke: #101a3a;
 }

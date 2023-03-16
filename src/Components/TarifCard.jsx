@@ -33,9 +33,16 @@ const TarifCard = ({ title, price, advantages }) => {
         </div>
         <div className="tarif_button_outline button_outline">
           Приобрести
-          {/* <span style={{ alignItems: 'center' }}> */}
-          <img src={ArrowLink} alt="arrow" style={{ width: '12px', height: '12px' }} />
-          {/* </span> */}
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ width: '12px', height: '12px' }}
+          >
+            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
+          </svg>
         </div>
       </div>
     </div>
