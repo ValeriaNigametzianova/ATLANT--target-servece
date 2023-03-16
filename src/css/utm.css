@@ -1,0 +1,76 @@
+.list_grid {
+  display: flex;
+  justify-content: space-between;
+}
+.list_grid_point {
+  width: 23.65853%;
+  position: relative;
+}
+
+.list_grid_point_number {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 120%;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  opacity: 0.07;
+}
+
+.list_grid_title {
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 40px;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.video {
+  width: 49.14634%;
+  /* height: 452.8px; */
+  height: 391px;
+}
+.news_wrapper_inner {
+  display: grid;
+  grid-template-columns: 25.4878% 26.158536% 7.743902% 23.231707% 15.12195%;
+  grid-template-rows: auto auto;
+  gap: 10px 10px;
+  grid-template-areas: 'a  b  c c c';
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+
+.promotion_title {
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
