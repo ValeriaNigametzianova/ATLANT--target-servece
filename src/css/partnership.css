@@ -1,0 +1,91 @@
+.list_grid {
+  display: grid;
+  grid-template-columns: 23.6% 23.6% 23.6%;
+  grid-template-rows: auto auto;
+  gap: 80px;
+  grid-template-areas:
+    'a  b  c '
+    'd  e  f';
+}
+.a {
+  position: relative;
+  grid-area: a;
+}
+.b {
+  position: relative;
+  grid-area: b;
+}
+.c {
+  position: relative;
+  grid-area: c;
+}
+.d {
+  position: relative;
+  grid-area: d;
+}
+.e {
+  position: relative;
+  grid-area: e;
+}
+.f {
+  position: relative;
+  grid-area: f;
+}
+.list_grid_point_number {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 120%;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  opacity: 0.07;
+}
+
+.list_grid_title {
+  font-family: var(--neueMachina);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 40px;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.table {
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  /* color: #cecece; */
+  color: #ffffff;
+}
+.table_head {
+  display: flex;
+  padding: 30px 0;
+  gap: 30px;
+  border-bottom: 1px solid #01d1ff;
+}
+.table_row {
+  display: flex;
+  padding-top: 60px;
+  gap: 30px;
+}
+.table_col1 {
+  width: 32.13%;
+}
+.table_col {
+  display: flex;
+  width: 15.12%;
+  justify-content: center;
+}

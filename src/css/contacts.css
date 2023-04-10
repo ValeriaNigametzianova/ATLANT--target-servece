@@ -1,0 +1,266 @@
+.contacts_wrap {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+.contacts_item {
+  max-width: 527px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.cocials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#FB_icon {
+  cursor: pointer;
+}
+#FB_icon circle {
+  animation: fb_bg_out 0.1s ease-in 1 forwards;
+}
+#FB_icon:hover circle {
+  animation: fb_bg_fill 0.2s ease-in 1 forwards;
+}
+
+@keyframes fb_bg_fill {
+  0% {
+    transform: translateX(20);
+    fill: #afff0100;
+  }
+  100% {
+    transform: translateX(0);
+    cx: 22.5;
+    cy: 22.5;
+    r: 22.5;
+    fill: #aeff01;
+  }
+}
+
+@keyframes fb_bg_out {
+  0% {
+    transform: translateX(0);
+    cx: 22.5;
+    cy: 22.5;
+    r: 22.5;
+    fill: #aeff01;
+  }
+  100% {
+    transform: translateX(20);
+    fill: #afff0100;
+  }
+}
+
+.VK_icon {
+  cursor: pointer;
+}
+.VK_icon rect {
+  animation: vk_bg_out 0.2s ease-in 1 forwards;
+}
+.VK_icon:hover rect {
+  animation: vk_bg_fill 0.2s ease-in 1 forwards;
+}
+#text {
+  animation: vk_text_out 0.12s ease-in 1 forwards;
+}
+.VK_icon:hover #text {
+  animation: vk_text_fill 0.35s ease-in 1 forwards;
+}
+@keyframes vk_bg_fill {
+  0% {
+    transform: translateX(16);
+    width: 7;
+    height: 7;
+    rx: 68;
+    fill: #afff0100;
+  }
+  100% {
+    x: 0;
+    y: 0;
+    width: 100%;
+    height: 100%;
+    rx: 12;
+    fill: #aeff01;
+  }
+}
+@keyframes vk_bg_out {
+  0% {
+    transform: translateX(0);
+    x: 0;
+    y: 0;
+    width: 100%;
+    height: 100%;
+    rx: 12;
+    fill: #aeff01;
+  }
+  100% {
+    transform: translateX(16);
+    width: 7;
+    height: 7;
+    rx: 68;
+    fill: #afff0100;
+  }
+}
+@keyframes vk_text_fill {
+  0% {
+    fill: #aeff01;
+    stroke: #aeff01;
+  }
+  100% {
+    fill: #09090b;
+    stroke: #09090b;
+  }
+}
+@keyframes vk_text_out {
+  0% {
+    fill: #09090b;
+    stroke: #09090b;
+  }
+  100% {
+    fill: #aeff01;
+    stroke: #aeff01;
+  }
+}
+
+.IG_icon {
+  cursor: pointer;
+}
+.IG_icon rect {
+  animation: ig_bg_out 0.2s ease-in 1 forwards;
+}
+.IG_icon:hover rect {
+  animation: ig_bg_fill 0.2s ease-in 1 forwards;
+}
+.IG_icon #dot {
+  animation: ig_mask_out 0.2s ease-in 1 forwards;
+}
+.IG_icon:hover #dot {
+  animation: ig_mask_fill 0.2s ease-in 1 forwards;
+}
+
+@keyframes ig_bg_fill {
+  0% {
+    transform: translateX(16);
+    width: 3;
+    height: 3;
+    rx: 40;
+    fill: #afff0100;
+  }
+  100% {
+    x: 3;
+    y: 3;
+    width: 100%;
+    height: 100%;
+    rx: 11;
+    fill: #aeff01;
+  }
+}
+
+@keyframes ig_bg_out {
+  0% {
+    transform: translateX(0);
+    x: 3;
+    y: 3;
+    width: 100%;
+    height: 100%;
+    rx: 11;
+    fill: #aeff01;
+  }
+  100% {
+    transform: translateX(16);
+    width: 3;
+    height: 3;
+    rx: 40;
+    fill: #afff0100;
+  }
+}
+@keyframes ig_mask_fill {
+  0% {
+    fill: #aeff01;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #afff0100;
+    stroke-width: 1;
+  }
+}
+@keyframes ig_mask_out {
+  0% {
+    fill: #afff0100;
+    stroke-width: 1;
+  }
+  100% {
+    fill: #aeff01;
+    stroke-width: 3;
+  }
+}
+.TG_icon {
+  cursor: pointer;
+}
+.TG_icon:hover #bg_fill,
+.TG_icon #bg_out {
+  animation: tg_stroke_fill 0.2s ease-in 1 forwards;
+}
+.TG_icon #bg_fill,
+.TG_icon:hover #bg_out {
+  animation: tg_stroke_out 0.2s ease-in 1 forwards;
+}
+.TG_icon #tg_fill {
+  animation: tg_bg_out 0.1s ease-in 1 forwards;
+}
+.TG_icon:hover #tg_fill {
+  animation: tg_bg_fill 0.3s ease-in 1 forwards;
+}
+@keyframes tg_stroke_fill {
+  0% {
+    fill: #afff0100;
+  }
+  100% {
+    fill: #aeff01;
+  }
+}
+@keyframes tg_stroke_out {
+  0% {
+    fill: #aeff01;
+  }
+  100% {
+    fill: #afff0100;
+  }
+}
+@keyframes tg_bg_fill {
+  0% {
+    transform: translateX(22.5);
+    fill: #afff0100;
+  }
+  100% {
+    /* transform: translate(0, 0); */
+    cx: 22.5;
+    cy: 22.5;
+    width: 100%;
+    height: 100%;
+    r: 21.5;
+    fill: #ff0101;
+  }
+}
+@keyframes tg_bg_out {
+  0% {
+    /* transform: translateX(0); */
+    cx: 22.5;
+    cy: 22.5;
+    width: 100%;
+    height: 100%;
+    r: 21.5;
+    fill: #ff0101;
+  }
+  100% {
+    transform: translateX(22.5);
+    /* cx: 22.5;
+    cy: 0;
+    width: 3;
+    height: 3;
+    r: 1.5; */
+    fill: #afff0100;
+  }
+}
