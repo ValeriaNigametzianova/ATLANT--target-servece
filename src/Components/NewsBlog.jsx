@@ -3,16 +3,16 @@ import { HashLink } from 'react-router-hash-link'
 import styled, { css } from 'styled-components'
 import '../css/newsblog.css'
 
-const NewsBlog = ({ image, label, title, description, time, date }) => {
-  const Newscard_background_photo = styled.div`
-    width: inherit;
-    height: 37.468%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-image: url(${(props) => props.image});
-  `
+const Newscard_background_photo = styled.div`
+  width: inherit;
+  height: 37.468%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url(${(props) => props.image});
+`
 
+const NewsBlog = ({ image, label, title, description, time, date }) => {
   return (
     <HashLink to="/blog/post" className="newscard">
       <div className="newscard_background">
