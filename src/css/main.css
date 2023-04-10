@@ -42,6 +42,14 @@
   max-width: 1640px;
   margin: 0 auto;
 }
+.content.show {
+  display: flex;
+  flex-direction: column;
+  max-width: 1640px;
+  margin: 0 auto;
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .first_screen {
   display: flex;
@@ -61,6 +69,17 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 240px;
+  opacity: 0;
+  transform: translateY(30%);
+}
+.second_screen.show {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 240px;
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+  transform: translateY(0%);
 }
 
 .double_screen {
@@ -69,9 +88,24 @@
   width: 100%;
   overflow: hidden;
 }
+.screen_on_photo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+}
 .screen {
   width: 100%;
   margin-top: 240px;
+  opacity: 0;
+  transform: translateY(30%);
+}
+.screen.show {
+  width: 100%;
+  margin-top: 240px;
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+  transform: translateY(0%);
 }
 .second_column {
   position: relative;
@@ -221,4 +255,46 @@
 }
 .display-linebreak {
   white-space: pre-line;
+}
+
+#naming {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: naming_moving 1s ease-out 2s 1 forwards;
+}
+#naming_button {
+  opacity: 0;
+  animation: naming_button_moving 0.7s ease-out 3s 1 forwards;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes naming_moving {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes naming_button_moving {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  90% {
+    transform: translateX(0);
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
