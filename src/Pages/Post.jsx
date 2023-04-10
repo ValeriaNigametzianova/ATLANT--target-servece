@@ -1,6 +1,8 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import CoverImg from '../image/post_cover.png'
+import React, { useContext, useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
+import styled from 'styled-components'
 import TimerIcon from '../icons/timer.svg'
 import EyeIcon from '../icons/eye.svg'
 import CalendarIcon from '../icons/calendar.svg'
@@ -15,8 +17,22 @@ import News1 from '../image/house-with-rule.png'
 import News2 from '../image/news_1.png'
 import News3 from '../image/news_3.png'
 import NewsBlog from '../Components/NewsBlog'
+import Post_image1 from '../image/post_image1.jpg'
 
-const Post = () => {
+const Cover = styled.div`
+  width: 100%;
+  height: 510px;
+  position: relative;
+  background-image: url(${(props) => props.image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+`
+
+const Post = observer(() => {
+  const { app } = useContext(Context)
+  const location = useLocation()
+  const Photo_1 = useRef(null)
   const News = [
     {
       image: News1,
@@ -43,15 +59,10 @@ const Post = () => {
       date: '19.03.22',
     },
   ]
-  const Cover = styled.div`
-    width: 100%;
-    height: 510px;
-    position: relative;
-    background-image: url(${(props) => props.image});
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 60px;
-  `
+
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
       <Header></Header>
@@ -105,7 +116,6 @@ const Post = () => {
                 <div className="h4 policy_h4">Cпециально для нас Полина записала подкаст! Слушайте ниже:</div>
               </div>
               <Player></Player>
-
               <div className="h3_inner" id="title1">
                 1. Ставьте конкретные цели
               </div>
@@ -170,6 +180,39 @@ const Post = () => {
                   А для эффективного распределения задач руководителю компании или отдела важно хорошо знать каждого
                   сотрудника, его сильные и слабые стороны. Это позволит повысить продуктивность и отдельного работника,
                   и всей команды.
+                </div>
+              </div>
+              <div>
+                <div id="post_photo_placeholder" className="post_photo_placeholder">
+                  <img id="photo_1" src={Post_image1} alt="planing_photo" />
+                </div>
+                <div
+                  id="post_photo"
+                  className="post_photo"
+                  onClick={() => {
+                    if (document.getElementById('photo_1').getAttribute('class') !== 'zoom_image') {
+                      document.getElementById('photo_1').setAttribute('class', 'zoom_image')
+                      document.getElementById('post_photo').setAttribute('class', 'post_photo_zoom')
+                      document
+                        .getElementById('post_photo_placeholder')
+                        .setAttribute('class', 'post_photo_placeholder_zoom')
+                    } else {
+                      document.getElementById('photo_1').setAttribute('class', '')
+                      document.getElementById('post_photo').setAttribute('class', 'post_photo')
+                      document.getElementById('post_photo_placeholder').setAttribute('class', 'post_photo_placeholder')
+                    }
+                  }}
+                >
+                  <div className="post_photo_cover">
+                    <img
+                      id="photo_1"
+                      ref={Photo_1}
+                      src={Post_image1}
+                      alt="planing_photo"
+                      onMouseDown={(e) => e.stopPropagation()}
+                      style={{ cursor: 'auto' }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,6 +293,6 @@ const Post = () => {
       <Footer />
     </div>
   )
-}
+})
 
 export default Post

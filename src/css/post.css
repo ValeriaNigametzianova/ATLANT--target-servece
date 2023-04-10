@@ -20,7 +20,7 @@
   max-width: 1640px;
   justify-content: space-between;
   margin: 0 auto;
-  align-items: end;
+  align-items: flex-end;
 }
 .article_screen {
   display: flex;
@@ -89,7 +89,105 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 7px;
 }
+.post_photo_placeholder {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  background-image: url('../image/post_image1.jpg');
+  object-fit: fill;
+  width: 100%;
+  margin-top: 40px;
+  /* visibility: hidden; */
+}
+.post_photo_placeholder_zoom {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-image: url('../image/post_image1.jpg');
+  object-fit: fill;
+  width: 100%;
+  /* visibility: visible; */
+  margin-top: 40px;
+}
+.post_photo {
+  position: relative;
+  cursor: pointer;
+  margin-top: 40px;
+  /* background-image: url('../image/post_image1.jpg'); */
+}
+.post_photo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
 
+.post_photo:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  background-color: #00000088;
+  background-image: url('../icons/search.svg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  opacity: 0;
+}
+
+.post_photo:hover:before,
+.post_photo:hover:after {
+  opacity: 1;
+}
+.post_photo_zoom {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #00000088;
+}
+.post_photo_cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.post_photo_zoom:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 4%;
+  right: 2%;
+  background-image: url('../icons/close.svg');
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.post_photo_zoom img {
+  display: block;
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+.zoom_icon {
+  top: 50%;
+  left: 50%;
+}
 dl,
 dt,
 dd,
