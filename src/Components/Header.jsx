@@ -29,7 +29,7 @@ const Header = () => {
               </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/main#Partnership">
+              <HashLink smooth to="/partnership">
                 Партнерство
               </HashLink>
             </div>
@@ -44,14 +44,14 @@ const Header = () => {
               </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/main#Contacts">
+              <HashLink smooth to="/contacts">
                 Контакты
               </HashLink>
             </div>
           </div>
           <div className="actions">
-            <img src={UserIcon} alt="lk" />
-            <img src={PhoneIcon} alt="phone" />
+            <object data={UserIcon} alt="lk" />
+            <object data={PhoneIcon} alt="phone" />
           </div>
           <button className="button_outline" style={{ right: 0 }}>
             Попробовать бесплатно

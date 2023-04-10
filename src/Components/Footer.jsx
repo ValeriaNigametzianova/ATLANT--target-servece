@@ -3,9 +3,9 @@ import '../css/main.css'
 import '../css/header.css'
 import '../css/footer.css'
 import { NavLink } from 'react-router-dom'
-import FB from '../icons/social_FB.svg'
-import IG from '../icons/social_IG.svg'
-import VK from '../icons/social_VK.svg'
+import IconFB from '../icons/FB_icon.svg'
+import IconIG from '../icons/IG_icon.svg'
+import IconVK from '../icons/VK_icon.svg'
 
 const Footer = () => {
   return (
@@ -51,9 +51,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer_social_media">
-                <img src={FB} alt="Facebook" style={{ width: '25px', height: '25px' }} />
-                <img src={VK} alt="ВКонтакте" style={{ width: '25px', height: '25px' }} />
-                <img src={IG} alt="Instagram" style={{ width: '25px', height: '25px' }} />
+                <object data={IconFB} alt="Facebook" style={{ width: '25px', height: '25px' }} />
+                <object data={IconVK} alt="ВКонтакте" style={{ width: '25px', height: '25px' }} />
+                <object data={IconIG} alt="Instagram" style={{ width: '25px', height: '25px' }} />
               </div>
             </div>
           </div>
