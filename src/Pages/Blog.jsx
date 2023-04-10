@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import Header from '../Components/Header'
 import BlogCover from '../image/cover-blog.png'
@@ -8,11 +8,24 @@ import News1 from '../image/house-with-rule.png'
 import News2 from '../image/news_1.png'
 import News3 from '../image/news_3.png'
 import Footer from '../Components/Footer'
-import { HashLink } from 'react-router-hash-link'
-import { Navigate, NavLink, useNavigate } from 'react-router-dom'
-import Search from '../icons/search.svg'
+import { useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
 
-const Blog = () => {
+const Cover = styled.div`
+  width: 100%;
+  height: 510px;
+  position: relative;
+  background-image: url(${(props) => props.image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+`
+
+const Blog = observer(() => {
+  const { app } = useContext(Context)
+  const location = useLocation()
   const News = [
     {
       image: News1,
@@ -39,21 +52,16 @@ const Blog = () => {
       date: '19.03.22',
     },
   ]
-  const Cover = styled.div`
-    width: 100%;
-    height: 510px;
-    position: relative;
-    background-image: url(${(props) => props.image});
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 60px;
-  `
 
   let navigate = useNavigate()
   const routeChange = () => {
     let path = `/ATLANT-target-service/blog/post`
     navigate(path)
   }
+
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
       <Header></Header>
@@ -67,7 +75,7 @@ const Blog = () => {
       <Cover image={BlogCover}>
         <div className="container">
           <div className="content">
-            <div className="first_screen_inner">
+            <div className="screen_on_photo">
               <div className="h1_inner">Блог</div>
               <div className="h4" style={{ maxWidth: '32.13%' }}>
                 Делимся с вами новостями ATLANT, крутыми фишками, удачными и не очень кейсами. Здесь также можно
@@ -169,6 +177,6 @@ const Blog = () => {
       <Footer></Footer>
     </div>
   )
-}
+})
 
 export default Blog

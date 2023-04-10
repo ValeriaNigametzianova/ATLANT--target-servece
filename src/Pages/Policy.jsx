@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import '../css/policy.css'
 import Dot from '../icons/dot_mark.svg'
-import ArrowLink from '../icons/arrow_button_cards.svg'
 
-const Policy = () => {
+const Policy = observer(() => {
+  const { app } = useContext(Context)
+  const location = useLocation()
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
       <a href="#top">
@@ -146,6 +153,6 @@ const Policy = () => {
       <Footer></Footer>
     </div>
   )
-}
+})
 
 export default Policy

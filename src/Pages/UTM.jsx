@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../css/main.css'
 import '../css/buttons.css'
 import '../css/fonts.css'
 import '../css/utm.css'
 import Header from '../Components/Header'
-import ArrowLink from '../icons/arrow_button_cards.svg'
 import BGCode from '../image/background-code.svg'
 import Laptop from '../image/laptop.png'
 import News1 from '../image/news_1.png'
@@ -20,10 +19,15 @@ import Logo_Helix from '../image/logo_helix.png'
 import Logo_Reckitt from '../image/logo_reckitt.png'
 import { HashLink } from 'react-router-hash-link'
 import Footer from '../Components/Footer'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
 
-const UTM = () => {
+const UTM = observer(() => {
   const [youtubeID] = useState('eHjIY44K_n4')
-  // const [youtubeID] = useState('Q_QE1GR0NLc')
+  const { app } = useContext(Context)
+  const location = useLocation()
+
   const News = [
     {
       image: News1,
@@ -47,6 +51,10 @@ const UTM = () => {
       date: '19.03.22',
     },
   ]
+
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
       <img src={BGCode} alt="shape_planet" style={{ position: 'absolute', right: '0', zIndex: '-10' }} />
@@ -296,6 +304,6 @@ const UTM = () => {
       <Footer />
     </div>
   )
-}
+})
 
 export default UTM

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../css/main.css'
 import '../css/buttons.css'
 import '../css/fonts.css'
@@ -12,9 +12,9 @@ import Lines1 from '../image/lines_1.svg'
 import MaskLines1 from '../image/mask_for_lines_in_center.svg'
 import Lines2 from '../image/lines_2.svg'
 import Target from '../image/target.svg'
-import IconVK from '../icons/social_VK.svg'
-import IconFB from '../icons/social_FB.svg'
-import IconIG from '../icons/social_IG.svg'
+import IconVK from '../icons/VK_icon.svg'
+import IconFB from '../icons/FB_icon.svg'
+import IconIG from '../icons/IG_icon.svg'
 import Footer from '../Components/Footer'
 import Form from '../Components/Form'
 import News1 from '../image/news_1.png'
@@ -23,8 +23,13 @@ import News4 from '../image/news_4.png'
 import PlanetMini from '../image/planet_mini.png'
 import NewsCard from '../Components/NewsCard'
 import { HashLink } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
 
-const Main = () => {
+const Main = observer(() => {
+  const { app } = useContext(Context)
+  const location = useLocation()
   const advantagesStandart = [
     'доступ ко всем инструментам',
     'поддержка наших менеджеров',
@@ -79,10 +84,12 @@ const Main = () => {
       date: '15.03.23',
     },
   ]
-
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
-      <img src={planet_img} alt="shape_planet" style={{ position: 'absolute', left: 0 }} />
+      <img src={planet_img} style={{ position: 'absolute', left: 0 }} />
       <Header></Header>
       <a href="#top">
         <div className="button_to_top" style={{ rotate: '-45deg' }}>
@@ -94,19 +101,25 @@ const Main = () => {
       <div className="container">
         <div className="content">
           <div className="first_screen">
-            <div className="h0" style={{ alignSelf: 'end' }}>
-              Автоматизация
+            <div style={{ alignSelf: 'end', overflow: 'hidden' }}>
+              <p id="naming" className="h0">
+                Автоматизация
+              </p>
             </div>
-            <div className="h0" style={{ alignSelf: 'start' }}>
-              Контекстной
+            <div style={{ alignSelf: 'start', overflow: 'hidden' }}>
+              <p id="naming" className="h0">
+                Контекстной
+              </p>
             </div>
-            <div style={{ display: 'flex', alignItems: 'baseline' }}>
-              <p className="h0" style={{ marginLeft: '139px', marginRight: '94px' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', overflow: 'hidden' }}>
+              <p id="naming" className="h0" style={{ marginLeft: '139px', marginRight: '92px' }}>
                 Рекламы
               </p>
-              <div className="button_fill" style={{ bottom: '40px' }}>
-                Посмотреть демо
-              </div>
+              <span style={{ position: 'relative', overflow: 'hidden', bottom: '40px', width: '100%' }}>
+                <div id="naming_button" className="button_fill">
+                  Посмотреть демо
+                </div>
+              </span>
             </div>
           </div>
         </div>
@@ -321,8 +334,8 @@ const Main = () => {
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
               <div className="h1">Простые тарифы</div>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <img src={Target} alt="lines_img" />
-                <img src={Target} alt="lines_img" style={{ rotate: '-90deg' }} />
+                <img src={Target} />
+                <img src={Target} style={{ rotate: '-90deg' }} />
               </div>
             </div>
             <div style={{ display: 'flex', gap: '10px' }}>
@@ -395,9 +408,9 @@ const Main = () => {
                 </div>
               </div>
               <div className="contacts_socials">
-                <img src={IconVK} alt="socialMediaVK" style={{ width: '45px' }} />
-                <img src={IconFB} alt="socialMediaFB" style={{ width: '45px' }} />
-                <img src={IconIG} alt="socialMediaIG" style={{ width: '47px' }} />
+                <object data={IconVK} alt="VK icon" style={{ width: '45px' }} />
+                <object data={IconFB} alt="Facebook icon" style={{ width: '45px' }} />
+                <object data={IconIG} alt="Instagram icon" style={{ width: '47px' }} />
               </div>
             </div>
 
@@ -410,6 +423,6 @@ const Main = () => {
       <Footer></Footer>
     </div>
   )
-}
+})
 
 export default Main

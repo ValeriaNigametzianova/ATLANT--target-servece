@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Sphere from '../image/sphere.svg'
@@ -12,8 +12,16 @@ import Logo_Reckitt from '../image/logo_reckitt.png'
 import Lines2 from '../image/lines_2.svg'
 import ArrowLink from '../icons/arrow_button_cards.svg'
 import { HashLink } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom'
+import { Context } from '../index'
+import { observer } from 'mobx-react-lite'
 
-const Tools = () => {
+const Tools = observer(() => {
+  const { app } = useContext(Context)
+  const location = useLocation()
+  useEffect(() => {
+    app.setLocation(location)
+  }, [location])
   return (
     <div>
       <a href="#top">
@@ -275,6 +283,6 @@ const Tools = () => {
       <Footer></Footer>
     </div>
   )
-}
+})
 
 export default Tools
