@@ -4,7 +4,6 @@ import '../css/buttons.css'
 import '../css/fonts.css'
 import Header from '../Components/Header'
 import planet_img from '../image/planet.png'
-import ArrowLink from '../icons/arrow_button_cards.svg'
 import ArrowPrewSlider from '../icons/slider_arrow_left.svg'
 import ArrowNextSlider from '../icons/slider_arrow_right.svg'
 import TarifCard from '../Components/TarifCard'
@@ -26,6 +25,7 @@ import { HashLink } from 'react-router-hash-link'
 import { useLocation } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Main = observer(() => {
   const { app } = useContext(Context)
@@ -91,13 +91,7 @@ const Main = observer(() => {
     <div>
       <img src={planet_img} style={{ position: 'absolute', left: 0 }} />
       <Header></Header>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <div className="container">
         <div className="content">
           <div className="first_screen">
@@ -125,8 +119,8 @@ const Main = observer(() => {
         </div>
       </div>
       <div className="container">
-        <img src={Lines1} alt="shape_planet" style={{ position: 'absolute', left: 0, top: '50px' }} />
-        <img src={MaskLines1} alt="shape_planet" style={{ position: 'absolute', left: 0, top: '900px' }} />
+        <img src={Lines1} style={{ position: 'absolute', left: 0, top: '50px' }} />
+        <img src={MaskLines1} style={{ position: 'absolute', left: 0, top: '900px' }} />
         <div className="content">
           <div className="second_screen" id={'About us'}>
             <div className="h1">
@@ -299,9 +293,20 @@ const Main = observer(() => {
                 вознаграждение до&nbsp;15% на&nbsp;площадках за&nbsp;ведение клиентов и&nbsp;облегчите работу
                 с&nbsp;рекламой.
               </div>
-              <div style={{ display: 'flex', alignItems: 'baseline', marginTop: '40px' }}>
-                <div className="link">Узнать подробности</div>
-                <img src={ArrowLink} alt="arrow" style={{ width: '13px', height: '13px', marginLeft: '12px' }} />
+              <div className="link" style={{ display: 'flex', alignItems: 'baseline', marginTop: '40px' }}>
+                <HashLink to="/partnership">
+                  <div>Узнать подробности</div>
+                </HashLink>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ width: '13px', height: '13px', marginLeft: '12px' }}
+                >
+                  <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
+                </svg>
               </div>
             </div>
           </div>
@@ -328,7 +333,7 @@ const Main = observer(() => {
       </div>
 
       <div className="container">
-        <img src={Lines2} alt="lines_img" className="lines_second" />
+        <img src={Lines2} className="lines_second" />
         <div className="content">
           <div className="screen" id="Tarifs">
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
