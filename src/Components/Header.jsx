@@ -1,22 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../css/main.css'
 import '../css/header.css'
 import UserIcon from '../icons/user.svg'
 import PhoneIcon from '../icons/phone.svg'
 import { HashLink } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom'
+import { observer } from 'mobx-react-lite'
+import { Context } from '../index'
 
-const Header = () => {
+const Header = observer(() => {
+  const { app } = useContext(Context)
   useEffect(() => {
-    console.log(window.location.pathname)
+    console.log(app.location.pathname)
   }, [])
   return (
     <div className="container">
       <div className="content">
         <div className="header">
-          {/* {if (window.location.href === "")} */}
-          <a href="./index">
+          <HashLink to="/main">
             <div className="logo">ATLANT</div>
-          </a>
+          </HashLink>
           <div className="menu">
             <div className="header_h6">
               <HashLink smooth to="/main#About us">
@@ -24,14 +27,26 @@ const Header = () => {
               </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/main#Opportunities">
-                Возможности
-              </HashLink>
+              {app.location.pathname == '/main' ? (
+                <HashLink smooth to="/main#About us">
+                  Возможности
+                </HashLink>
+              ) : (
+                <HashLink smooth to="/tools">
+                  Возможности
+                </HashLink>
+              )}
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/partnership">
-                Партнерство
-              </HashLink>
+              {app.location.pathname == '/main' ? (
+                <HashLink smooth to="/main#Partnership">
+                  Партнерство
+                </HashLink>
+              ) : (
+                <HashLink smooth to="/partnership">
+                  Партнерство
+                </HashLink>
+              )}
             </div>
             <div className="header_h6">
               <HashLink smooth to="/main#Tarifs">
@@ -39,14 +54,26 @@ const Header = () => {
               </HashLink>
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/blog">
-                Блог
-              </HashLink>
+              {app.location.pathname == '/main' ? (
+                <HashLink smooth to="/main#Blog">
+                  Блог
+                </HashLink>
+              ) : (
+                <HashLink smooth to="/blog">
+                  Блог
+                </HashLink>
+              )}
             </div>
             <div className="header_h6">
-              <HashLink smooth to="/contacts">
-                Контакты
-              </HashLink>
+              {app.location.pathname == '/main' ? (
+                <HashLink smooth to="/main#Contacts">
+                  Контакты
+                </HashLink>
+              ) : (
+                <HashLink smooth to="/contacts">
+                  Контакты
+                </HashLink>
+              )}
             </div>
           </div>
           <div className="actions">
@@ -60,6 +87,6 @@ const Header = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Header

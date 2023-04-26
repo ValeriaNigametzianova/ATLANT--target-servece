@@ -2,10 +2,10 @@ import React from 'react'
 import '../css/main.css'
 import '../css/header.css'
 import '../css/footer.css'
-import { NavLink } from 'react-router-dom'
 import IconFB from '../icons/FB_icon.svg'
 import IconIG from '../icons/IG_icon.svg'
 import IconVK from '../icons/VK_icon.svg'
+import { HashLink } from 'react-router-hash-link'
 
 const Footer = () => {
   return (
@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="content">
           <div className="footer">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-              <a href="./index.html">
+              <HashLink to="/main">
                 <div className="logo">ATLANT</div>
-              </a>
+              </HashLink>
               <div style={{ display: 'flex', gap: '40px' }}>
                 <div className="h5_mark">© 2022 ATLANT</div>
                 <div className="h5_mark footer_menu_link">
-                  <NavLink to="/policy">Политика конфиденциальности</NavLink>
+                  <HashLink to="/policy">Политика конфиденциальности</HashLink>
                 </div>
               </div>
             </div>
@@ -29,24 +29,24 @@ const Footer = () => {
               <div className="footer_menu">
                 <div className="footer_menu_column">
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#About us">О нас</a>
+                    <HashLink to="/main#About us">О нас</HashLink>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#Opportunities">Возможности</a>
+                    <HashLink to="/tools">Возможности</HashLink>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#Tarifs">Тарифы</a>
+                    <HashLink to="/main#Tarifs">Тарифы</HashLink>
                   </div>
                 </div>
                 <div className="footer_menu_column">
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#Partnership">Партнерство</a>
+                    <HashLink to="/partnership">Партнерство</HashLink>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#Blog">Блог</a>
+                    <HashLink to="/blog">Блог</HashLink>
                   </div>
                   <div className="h5 footer_menu_link">
-                    <a href="Main.jsx#Contacts">Контакты</a>
+                    <HashLink to="/contacts">Контакты</HashLink>
                   </div>
                 </div>
               </div>
