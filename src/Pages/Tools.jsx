@@ -15,6 +15,7 @@ import { HashLink } from 'react-router-hash-link'
 import { useLocation } from 'react-router-dom'
 import { Context } from '../index'
 import { observer } from 'mobx-react-lite'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Tools = observer(() => {
   const { app } = useContext(Context)
@@ -24,13 +25,7 @@ const Tools = observer(() => {
   }, [location])
   return (
     <div>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <Header></Header>
       <div className="container">
         <img src={Sphere} alt="Sphere" style={{ position: 'absolute', right: 0, top: '206px' }} />

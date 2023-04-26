@@ -6,6 +6,7 @@ import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import '../css/policy.css'
 import Dot from '../icons/dot_mark.svg'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Policy = observer(() => {
   const { app } = useContext(Context)
@@ -15,13 +16,7 @@ const Policy = observer(() => {
   }, [location])
   return (
     <div>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <Header></Header>
       <div className="container">
         <div className="policy_content">

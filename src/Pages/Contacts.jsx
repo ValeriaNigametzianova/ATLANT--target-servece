@@ -9,6 +9,7 @@ import IconTG from '../icons/TG_icon.svg'
 import { useLocation } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Contacts = observer(() => {
   const { app } = useContext(Context)
@@ -19,13 +20,7 @@ const Contacts = observer(() => {
   return (
     <div>
       <Header></Header>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <div className="container">
         <div className="content">
           <div className="first_screen_inner">
