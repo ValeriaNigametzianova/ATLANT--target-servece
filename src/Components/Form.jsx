@@ -91,18 +91,16 @@ const Form = (props) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Label className="h5">Тариф:</Label>
             <div style={{ display: 'flex', gap: '10px' }}>
-              <button className="button_switch">Стандартный</button>
-              <button className="button_switch">Расширенный</button>
-              <button className="button_switch">Полный</button>
-              <button className="button_switch">Не уверен</button>
+              <div className="button_switch">Стандартный</div>
+              <div className="button_switch">Расширенный</div>
+              <div className="button_switch">Полный</div>
+              <div className="button_switch">Не уверен</div>
             </div>
           </div>
         )}
         <div className="h5" style={{ opacity: '0.8' }}>
           Нажимая кнопку, вы даете согласие на&nbsp;
-          <a href="#">
-            <span style={{ color: '#01D1FF' }}>обработку персональных данных</span>
-          </a>
+          <span className="header_h6">обработку персональных данных</span>
         </div>
       </form>
       <button className="button_fill">Отправить</button>
