@@ -9,19 +9,21 @@ const Titul = () => {
       <div class="container_title">
         <div class="content_title">
           <img src={Logo_Polytech} alt="LogoPolytech" height="100px" width="100px" />
-          <div class="h2_title">
-            ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ
+          <div className="content_title">
+            <div class="h3_title">
+              ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ
+            </div>
+            <div class="h3_title">МОСКОВСКИЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</div>
           </div>
-          <div class="h2_title">МОСКОВСКИЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</div>
         </div>
 
-        <div class="content">
-          <div class="h2_title">Факультет информационных технологий</div>
-          <div class="h2_title">Кафедра Информатики и информационных технологий</div>
-          <div class="h2_title">Направление подготовки 09.03.02 «Информационные системы и технологии»</div>
+        <div class="content_title">
+          <div class="h3_title">Факультет информационных технологий</div>
+          <div class="h3_title">Кафедра Информатики и информационных технологий</div>
+          <div class="h3_title">Направление подготовки 09.03.02 «Информационные системы и технологии»</div>
         </div>
-        <div class="content">
-          <div class="h3_title">Нигаметзянова Валерия Рустамовна 201-722</div>
+        <div class="content_title">
+          <div class="h2_title">Нигаметзянова Валерия Рустамовна 201-722</div>
           <NavLink to="/main">
             <div class="h4_title">Сайт ATLANT – сервис по автоматизации контекстной рекламы</div>
           </NavLink>
