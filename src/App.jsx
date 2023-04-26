@@ -13,6 +13,7 @@ import Partnership from './Pages/Partnership'
 import Contacts from './Pages/Contacts'
 import { Context } from './index'
 import { observer } from 'mobx-react-lite'
+import Post_Newspaper from './Pages/Post_Newspaper'
 
 const App = observer(() => {
   const { app } = useContext(Context)
@@ -45,11 +46,12 @@ const App = observer(() => {
           <Route path="/policy" element={<Policy />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/blog/post" element={<Post />} />
-          <Route path="/*" element={<Main />} />
+          <Route path="/blog/post2" element={<Post_Newspaper />} />
           <Route path="/tools/UTMMarkup" element={<UTM />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/partnership" element={<Partnership />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/*" element={<Main />} />
         </Routes>
       </div>
     </BrowserRouter>
