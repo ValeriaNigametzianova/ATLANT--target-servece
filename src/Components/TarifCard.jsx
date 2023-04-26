@@ -8,7 +8,7 @@ import ArrowLink from '../icons/arrow_button_cards.svg'
 const TarifCard = ({ title, price, advantages }) => {
   return (
     <div className="tarif">
-      <div>
+      <div style={{ zIndex: '3' }}>
         <div className="h2 tarif_title">{title}</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
           {advantages.map((el) => (
@@ -45,6 +45,31 @@ const TarifCard = ({ title, price, advantages }) => {
           </svg>
         </div>
       </div>
+      <svg
+        id="hover_light"
+        width="540"
+        height="100%"
+        viewBox="0 0 540 745"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          id="mask0_513_2159"
+          style={{ maskType: 'alpha' }}
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="540"
+          height="745"
+        >
+          <rect width="540" height="745" rx="10" fill="#070709" />
+        </mask>
+        <g mask="url(#mask0_513_2159)">
+          <g opacity="0.5" filter="url(#filter0_f_513_2159)">
+            <ellipse cx="264.5" cy="723" rx="331.5" ry="136" fill="#01d0ff00" />
+          </g>
+        </g>
+      </svg>
     </div>
   )
 }

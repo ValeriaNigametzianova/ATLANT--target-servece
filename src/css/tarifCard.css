@@ -8,10 +8,24 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   width: auto;
+  z-index: 1;
+  overflow: hidden;
 }
 .tarif_title {
   color: #aeff01;
   margin-bottom: 60px;
+  vertical-align: baseline;
+}
+.tarif_title::after {
+  content: '🔥';
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+.tarif:hover .tarif_title::after {
+  opacity: 1;
 }
 .tarif_advantages {
   display: flex;
@@ -47,4 +61,21 @@
   font-size: 24px;
   line-height: 140%;
   color: #aeff01;
+  z-index: 4;
+}
+
+#hover_light {
+  position: absolute;
+  z-index: 2;
+  margin-left: -60px;
+  margin-top: -80px;
+}
+
+#hover_light ellipse {
+  transition: all 0.2s ease-in;
+  filter: blur(131px);
+}
+
+.tarif:hover #hover_light ellipse {
+  fill: #01d1ff;
 }
