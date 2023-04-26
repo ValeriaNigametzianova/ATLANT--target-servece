@@ -18,6 +18,7 @@ import News2 from '../image/news_1.png'
 import News3 from '../image/news_3.png'
 import NewsBlog from '../Components/NewsBlog'
 import Post_image1 from '../image/post_image1.jpg'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Cover = styled.div`
   width: 100%;
@@ -66,13 +67,7 @@ const Post = observer(() => {
   return (
     <div>
       <Header></Header>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <Cover image={PostCover}>
         <div className="cover_place">
           <div className="cover_content">
@@ -100,7 +95,7 @@ const Post = observer(() => {
                 задач в команде
               </div>
             </div>
-            <AutorCard></AutorCard>
+            <AutorCard name="Полина кровякова" info="Тим-лид в ЛидерТаск Бизнес"></AutorCard>
           </div>
         </div>
       </Cover>
