@@ -12,9 +12,9 @@ const Newscard_background_photo = styled.div`
   background-image: url(${(props) => props.image});
 `
 
-const NewsBlog = ({ image, label, title, description, time, date }) => {
+const NewsBlog = ({ image, label, title, description, time, date, path }) => {
   return (
-    <HashLink to="/blog/post" className="newscard">
+    <HashLink to={path} className="newscard">
       <div className="newscard_background">
         <Newscard_background_photo image={image}></Newscard_background_photo>
       </div>

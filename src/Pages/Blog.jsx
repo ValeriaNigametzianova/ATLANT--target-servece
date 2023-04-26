@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
+import ButtonToTop from '../Components/ButtonToTop'
 
 const Cover = styled.div`
   width: 100%;
@@ -34,6 +35,7 @@ const Blog = observer(() => {
       description: `Появилась возможность отслеживать источники звонков на АМР-страницах. Ранее это было невозможно из-за ограничений\nдля этого типа страниц`,
       time: '5 мин',
       date: '08.10.22',
+      path: `/blog/post`,
     },
     {
       image: News3,
@@ -42,6 +44,7 @@ const Blog = observer(() => {
       description: `Рассказываем, как увеличить продуктивность каждого члена команды, при этом сохранить благополучный эмоциональный фон сотрудников`,
       time: '5 мин',
       date: '22.07.22',
+      path: `/blog/post`,
     },
     {
       image: News2,
@@ -50,14 +53,15 @@ const Blog = observer(() => {
       description: `Увеличили количество транзакций и возврат инвестиций в рекламу`,
       time: '3 мин',
       date: '19.03.22',
+      path: `/blog/post2`,
     },
   ]
 
   let navigate = useNavigate()
-  const routeChange = () => {
-    let path = `/ATLANT-target-service/blog/post`
-    navigate(path)
-  }
+  // const routeChange = () => {
+  //   let path = `/ATLANT-target-service/blog/post`
+  //   navigate(path)
+  // }
 
   useEffect(() => {
     app.setLocation(location)
@@ -65,13 +69,7 @@ const Blog = observer(() => {
   return (
     <div>
       <Header></Header>
-      <a href="#top">
-        <div className="button_to_top" style={{ rotate: '-45deg' }}>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17L17 1M17 1H7M17 1V11" stroke="#AEFF01" stroke-width="2" />
-          </svg>
-        </div>
-      </a>
+      <ButtonToTop></ButtonToTop>
       <Cover image={BlogCover}>
         <div className="container">
           <div className="content">
@@ -133,7 +131,7 @@ const Blog = observer(() => {
             <div className="blog_tape_row">
               {News.map((el, index) => (
                 <NewsBlog
-                  onClick={routeChange}
+                  // onClick={() => navigate(el?.path)}
                   key={index}
                   label={el?.label}
                   image={el?.image}
@@ -141,6 +139,7 @@ const Blog = observer(() => {
                   description={el?.description}
                   time={el?.time}
                   date={el?.date}
+                  path={el?.path}
                 ></NewsBlog>
               ))}
             </div>
