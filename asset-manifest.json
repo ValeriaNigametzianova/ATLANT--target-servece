@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ATLANT-target-service/static/css/main.db0ddf9a.css",
-    "main.js": "/ATLANT-target-service/static/js/main.7de0b996.js",
+    "main.css": "/ATLANT-target-service/static/css/main.82adbc14.css",
+    "main.js": "/ATLANT-target-service/static/js/main.80545bcd.js",
     "static/js/845.5e5631eb.chunk.js": "/ATLANT-target-service/static/js/845.5e5631eb.chunk.js",
     "static/js/787.dd349d84.chunk.js": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js",
     "static/media/post_image1.jpg": "/ATLANT-target-service/static/media/post_image1.cdd70b3901ed297843b2.jpg",
@@ -30,7 +30,7 @@
     "static/media/Logo_digitalGuru.png": "/ATLANT-target-service/static/media/Logo_digitalGuru.302662866a48a527910b.png",
     "static/media/logo_nikon.png": "/ATLANT-target-service/static/media/logo_nikon.23ffff7e1eeae6d249e8.png",
     "static/media/IG_icon.svg": "/ATLANT-target-service/static/media/IG_icon.cb460bf346db5b0d9f7b7044c0b60d59.svg",
-    "static/media/TG_icon.svg": "/ATLANT-target-service/static/media/TG_icon.41cf1488caf4160c0febb87afa5f9b83.svg",
+    "static/media/TG_icon.svg": "/ATLANT-target-service/static/media/TG_icon.d91096b6f1e5f8e366af36a3601ef509.svg",
     "static/media/phone.svg": "/ATLANT-target-service/static/media/phone.78a2145c9772c58b1945cfa0c28f5c2b.svg",
     "static/media/user.svg": "/ATLANT-target-service/static/media/user.d67508532e0b3311fac16364f543f95f.svg",
     "static/media/FB_icon.svg": "/ATLANT-target-service/static/media/FB_icon.f554ce74bef00bf4ebc1805d4cd773aa.svg",
@@ -51,13 +51,13 @@
     "static/media/arrow_sort.svg": "/ATLANT-target-service/static/media/arrow_sort.44acc83524e172376d35.svg",
     "static/media/arrow_button_cards.svg": "/ATLANT-target-service/static/media/arrow_button_cards.8529304d1601ab543cd19be729735820.svg",
     "static/media/dot_mark.svg": "/ATLANT-target-service/static/media/dot_mark.dc42f58fec546eae39f06e275acb4a56.svg",
-    "main.db0ddf9a.css.map": "/ATLANT-target-service/static/css/main.db0ddf9a.css.map",
-    "main.7de0b996.js.map": "/ATLANT-target-service/static/js/main.7de0b996.js.map",
+    "main.82adbc14.css.map": "/ATLANT-target-service/static/css/main.82adbc14.css.map",
+    "main.80545bcd.js.map": "/ATLANT-target-service/static/js/main.80545bcd.js.map",
     "845.5e5631eb.chunk.js.map": "/ATLANT-target-service/static/js/845.5e5631eb.chunk.js.map",
     "787.dd349d84.chunk.js.map": "/ATLANT-target-service/static/js/787.dd349d84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db0ddf9a.css",
-    "static/js/main.7de0b996.js"
+    "static/css/main.82adbc14.css",
+    "static/js/main.80545bcd.js"
   ]
 }
