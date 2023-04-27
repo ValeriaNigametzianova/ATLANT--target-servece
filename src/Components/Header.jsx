@@ -4,15 +4,12 @@ import '../css/header.css'
 import UserIcon from '../icons/user.svg'
 import PhoneIcon from '../icons/phone.svg'
 import { HashLink } from 'react-router-hash-link'
-import { useLocation } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
 
 const Header = observer(() => {
   const { app } = useContext(Context)
-  useEffect(() => {
-    console.log(app.location.pathname)
-  }, [])
+
   return (
     <div className="container">
       <div className="content">

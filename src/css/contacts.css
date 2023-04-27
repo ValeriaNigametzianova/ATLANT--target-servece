@@ -235,7 +235,6 @@
     fill: #afff0100;
   }
   100% {
-    /* transform: translate(0, 0); */
     cx: 22.5;
     cy: 22.5;
     width: 100%;
@@ -246,7 +245,6 @@
 }
 @keyframes tg_bg_out {
   0% {
-    /* transform: translateX(0); */
     cx: 22.5;
     cy: 22.5;
     width: 100%;
@@ -256,11 +254,6 @@
   }
   100% {
     transform: translateX(22.5);
-    /* cx: 22.5;
-    cy: 0;
-    width: 3;
-    height: 3;
-    r: 1.5; */
     fill: #afff0100;
   }
 }

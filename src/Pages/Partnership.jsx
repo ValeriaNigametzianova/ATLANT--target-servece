@@ -33,11 +33,6 @@ const Cover = styled.div`
 `
 
 const Partnership = observer(() => {
-  let navigate = useNavigate()
-  const routeChange = () => {
-    let path = `/ATLANT-target-service/blog/post`
-    navigate(path)
-  }
   const { app } = useContext(Context)
   const location = useLocation()
   useEffect(() => {

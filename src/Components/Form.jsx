@@ -22,26 +22,14 @@ const Form = (props) => {
           <Label htmlFor="username" className="h5" required>
             Имя
           </Label>
-          <input
-            id="username"
-            name="username"
-            required="required"
-            type="text"
-            // placeholder="myusername or mymail@mail.com"
-          />
+          <input id="username" name="username" required="required" type="text" />
         </p>
         {props.partnership ? (
           <p className="form_field">
             <Label htmlFor="username" className="h5" required>
               Компания
             </Label>
-            <input
-              id="username"
-              name="username"
-              required="required"
-              type="text"
-              // placeholder="myusername or mymail@mail.com"
-            />
+            <input id="username" name="username" required="required" type="text" />
           </p>
         ) : (
           <></>
@@ -75,7 +63,6 @@ const Form = (props) => {
             Комментарий
           </Label>
           <input id="comment" name="comment" type="text" />
-          {/* <textarea id="comment" name="comment" rows="2"></textarea> */}
         </p>
         {props.partnership ? (
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

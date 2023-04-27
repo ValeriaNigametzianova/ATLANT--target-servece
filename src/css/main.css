@@ -1,12 +1,10 @@
 .lines_first {
-  /* display: block; */
   position: absolute;
   background-image: url('../image/lines_1.png');
   background-repeat: no-repeat;
   left: 0;
   z-index: -2;
   top: 50px;
-  /* top: -19.6%; */
   width: 64%;
   height: 160%;
 }
@@ -16,8 +14,6 @@
   left: 0;
   position: absolute;
   background: url('../image/mask_for_lines_in_center.svg');
-  /* background-color: #01d1ff; */
-
   background-repeat: no-repeat;
   background-size: cover;
   bottom: -390px;
@@ -188,7 +184,6 @@
   height: 831px;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 .slider_info {
   position: absolute;
@@ -266,7 +261,6 @@
 #naming_button {
   opacity: 0;
   animation: naming_button_moving 0.7s ease-out 3s 1 forwards;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes naming_moving {

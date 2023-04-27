@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   width: 32.1341%;
-  /* height: 73.148vh; */
   height: 790px;
   background: #070709;
   border: 1px solid rgba(1, 209, 255, 0.3);
@@ -25,8 +24,6 @@
 }
 
 .newscard_background_fill {
-  /* height: 100%;
-  width: 100%; */
   background: #070709;
   border: 1px solid rgba(1, 209, 255, 0.3);
   border-radius: 10px;

@@ -8,7 +8,6 @@ import News1 from '../image/house-with-rule.png'
 import News2 from '../image/news_1.png'
 import News3 from '../image/news_3.png'
 import Footer from '../Components/Footer'
-import { useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
@@ -56,12 +55,6 @@ const Blog = observer(() => {
       path: `/blog/post2`,
     },
   ]
-
-  let navigate = useNavigate()
-  // const routeChange = () => {
-  //   let path = `/ATLANT-target-service/blog/post`
-  //   navigate(path)
-  // }
 
   useEffect(() => {
     app.setLocation(location)
@@ -131,7 +124,6 @@ const Blog = observer(() => {
             <div className="blog_tape_row">
               {News.map((el, index) => (
                 <NewsBlog
-                  // onClick={() => navigate(el?.path)}
                   key={index}
                   label={el?.label}
                   image={el?.image}

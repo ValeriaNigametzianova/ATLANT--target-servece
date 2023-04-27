@@ -19,7 +19,6 @@
   font-size: 36px;
   margin-bottom: 30px;
   font-family: var(--roboto);
-  /* text-align: center; */
 }
 .h2_title {
   font-size: 28px;
@@ -41,12 +40,14 @@
   margin-bottom: 20px;
   font-family: var(--neueMachina);
   background: var(--gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .h4_title:hover {
   background: var(--gradient_hover);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

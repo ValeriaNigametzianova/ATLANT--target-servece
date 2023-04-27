@@ -172,7 +172,6 @@ const Post_Newspaper = observer(() => {
               {News.map((el, index) => (
                 <NewsBlog
                   key={index}
-                  //   className={String.fromCharCode(97 + index)}
                   label={el?.label}
                   image={el?.image}
                   title={el?.title}
