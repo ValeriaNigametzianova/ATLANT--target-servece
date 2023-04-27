@@ -175,21 +175,14 @@ const UTM = observer(() => {
       <div className="container">
         <div className="content">
           <div className="screen">
-            <div className="h2_inner">
-              Как Работает автоматический
-              <br /> utm-разметчик?
-            </div>
+            <div className="h2_inner">Как выглядит настройка?</div>
             <div className="double_screen">
               <img src={Laptop} alt="Laptop ATLANT Interface" />
               <div className="second_column">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  <div className="h4">
-                    Сервис добавляет и обновляет нужную разметку ссылок в объявлениях, чтобы в Analytics поступали
-                    корректные данные из Яндекс Директа и в Метрику — из Google Ads
-                  </div>
-                  <div className="h4">
-                    Автоматическая UTM-разметка объявлений доступна для рекламных каналов: Яндекс.Директ, Google Ads,
-                    myTarget, ВКонтакте, YouTube, Яндекс.Маркет и др.
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                  <div className="h3_roboto">Пример разметки для Яндекс.Директа</div>
+                  <div className="h4" style={{ overflowWrap: 'break-word' }}>
+                    utm_content=ch_yandex_direct|cid_&#123;campaign_id&#125;|gid_&#123;gbid&#125;|ad_&#123;ad_id&#125;|ph_&#123;phrase_id&#125;&#124;crt_&#123;creative_id&#125;|pst_&#123;position_type&#125;|ps_&#123;position&#125;|srct_&#123;source_type&#125;|src_&#123;source&#125;|devt_&#123;device_type&#125;|ret_&#123;retargeting_id&#125;|geo_&#123;region_id&#125;|cf_&#123;coef_goal_context_id&#125;|int_&#123;interest_id&#125;|tgt_&#123;adtarget_id&#125;add_&#123;addphrases&#125;|mrlid_%project_name_ATLANT%|dop_%the_name_of_the_additional_link_is_translated%utm_term=&#123;keyword&#125;
                   </div>
                 </div>
               </div>
