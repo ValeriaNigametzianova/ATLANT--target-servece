@@ -37,21 +37,20 @@ const App = observer(() => {
     })
   }, [app.location])
   return (
-    <BrowserRouter basename="/ATLANT-target-service">
+    <BrowserRouter basename='/ATLANT-target-service'>
       <ScrollToTop />
-      <div className="App">
+      <div className='App'>
         <Routes>
-          <Route path="/" element={<Titul />} />
-          <Route path="/main" element={<Main />} />
-          <Route path="/policy" element={<Policy />} />
-          <Route path="/tools" element={<Tools />} />
-          <Route path="/blog/post" element={<Post />} />
-          <Route path="/blog/post2" element={<Post_Newspaper />} />
-          <Route path="/tools/UTMMarkup" element={<UTM />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/partnership" element={<Partnership />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/*" element={<Main />} />
+          <Route path='/' element={<Main />} />
+          <Route path='/policy' element={<Policy />} />
+          <Route path='/tools' element={<Tools />} />
+          <Route path='/blog/post' element={<Post />} />
+          <Route path='/blog/post2' element={<Post_Newspaper />} />
+          <Route path='/tools/UTMMarkup' element={<UTM />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/partnership' element={<Partnership />} />
+          <Route path='/contacts' element={<Contacts />} />
+          <Route path='/*' element={<Main />} />
         </Routes>
       </div>
     </BrowserRouter>
